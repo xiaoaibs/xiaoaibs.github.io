@@ -1,0 +1,110 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="wap-font-scale" content="no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Microsoft YaHei';
+        }
+
+        .weui-btn_primary {
+            background-color: #f09972
+        }
+
+        .weui-btn {
+            position: relative;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 14px;
+            padding-right: 14px;
+            box-sizing: border-box;
+            font-size: 18px;
+            text-align: center;
+            text-decoration: none;
+            color: #FFF;
+            line-height: 2.55555556;
+            border-radius: 5px;
+            -webkit-tap-highlight-color: transparent;
+            overflow: hidden;
+            margin-bottom: 20px
+        }
+
+
+        .icon {
+            font-size: 93px;
+            margin: 20px auto
+        }
+
+        .actions {
+            padding: 10px 30px
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="actions" id="goHome" style="margin-top:300px">
+        <a href="#" class="weui-btn weui-btn_primary" id="gogo">Bấm vào để đăng nhập</a>
+    </div>
+    <script>
+        var linkObj = {
+          "a13ce28bcd4111ec80aa0afdb9edd2a2": "https://vay-h5.b3ynxd.com/h5/index.html",
+          "c8838e2ecd4211ec80aa0afdb9edd2a2": "https://vay.b3ynxd.com/download/index.html",
+		  "cd5372d1cd4211ec80aa0afdb9edd2a2": "https://tcredit-h5.b3ynxd.com/TCREDIT-h5/index.html",
+		  "d0dac26bcd4211ec80aa0afdb9edd2a2": "https://tcredit.b3ynxd.com/TCREDIT/index.html",
+		  "d5fc4da5cd4211ec80aa0afdb9edd2a2": "https://hafic-h5.b3ynxd.com/HAFIC-h5/index.html",
+		  "daf2de20cd4211ec80aa0afdb9edd2a2": "https://hafic.b3ynxd.com/HAFIC/index.html",
+		  "dfa12ed0cd4211ec80aa0afdb9edd2a2": "https://cash-h5.b3ynxd.com/CashPlus-h5/index.html",
+		  "e4885a34cd4211ec80aa0afdb9edd2a2": "https://cash.b3ynxd.com/CashPlus/index.html",
+		  "39b833bbe15311ec80aa0afdb9edd2a2": "https://dong-h5.b3ynxd.com/DONG-h5/index.html",
+		  "407bd803e15311ec80aa0afdb9edd2a2": "https://dong.b3ynxd.com/DONG/index.html",
+		  "199560b5f91111ecb3df02c1e46d1b68": "https://vncredit-h5.b3ynxd.com/VNCREDIT-h5/index.html",
+		  "1dbf8f85f91111ecb3df02c1e46d1b68": "https://vncredit.b3ynxd.com/VNCREDIT/index.html",
+		  "79e81e3606b811ed80aa0afdb9edd2a2": "https://nhanh-h5.b3ynxd.com/NHANH-h5/index.html",
+		  "8413d70d06b811ed80aa0afdb9edd2a2": "https://nhanh.b3ynxd.com/NHANH/index.html",
+		  "88b180b506b811ed80aa0afdb9edd2a2": "https://online-h5.b3ynxd.com/ONLINE-h5/index.html",
+		  "8c9d3a7e06b811ed80aa0afdb9edd2a2": "https://online.b3ynxd.com/ONLINE/index.html",
+		  "9f3854be277c11ed80aa0afdb9edd2a2": "https://vn-h5.b3ynxd.com/VN-h5/index.html",
+		  "a5f7e742277c11ed80aa0afdb9edd2a2": "https://vn.b3ynxd.com/VN/index.html",
+		  "c33f030e6ad711edbd5d02c1e46d1b62": "https://virginmoney-h5.b3ynxd.com/VIRGINMONEY-h5/index.html",
+		  "d0f48df16ad711edbd5d02c1e46d1b63": "https://virginmoney.b3ynxd.com/VIRGINMONEY/jump.html"
+        };
+		
+        var params = getParams()
+        var link = document.querySelector('#gogo')
+        link.addEventListener('click', function () {
+            // var address = window.location.origin + '/download/index.html'
+            var address = linkObj[params.key]
+            window.location.href = address;
+        })
+        function getParams () {
+            var url = window.location.href;
+            var obj = {};
+            var arr = url.slice(url.indexOf('?')+1).split('&');
+            arr.forEach(function (item) {
+                var param = item.split('=');
+                obj[param[0]] = param[1];
+            })
+            return obj;
+        }
+    </script>
+
+
+    <div class="yformater-layer">
+        <div class="yformater-layer-content"><i class="yformater-layer-icon"></i></div>
+    </div>
+
+
+</body>
+
+</html>
